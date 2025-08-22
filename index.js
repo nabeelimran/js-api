@@ -31,6 +31,7 @@ app.post("/execute", checkToken, (req, res) => {
   if (!code) {
     return res.status(400).json({ error: "No code provided" });
   }
+  console.log({code});
 
   try {
     // Execute the code
